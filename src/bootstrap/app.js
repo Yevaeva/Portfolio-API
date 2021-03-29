@@ -28,7 +28,7 @@ app.use(body_parser.urlencoded({
   extended: true
 }));
 
-app.use(cors());
+
 app.use(cors({
   "Access-Control-Allow-Origin": "*",
   methods: 'GET,POST,PATCH,DELETE,OPTIONS',
