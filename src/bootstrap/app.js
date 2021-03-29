@@ -29,7 +29,16 @@ app.use(body_parser.urlencoded({
 }));
 
 app.use(cors());
+app.use(cors({
+  "Access-Control-Allow-Origin": "*",
+  methods: 'GET,POST,PATCH,DELETE,OPTIONS',
+  credentials: true,
+  optionsSuccessStatus: 200,
+  // origin: 'https://foo.com'
+}));
+ 
 app.options('*', cors());
+
 
 app.use('/uploads', express.static('uploads'));
 app.use('/static', express.static('public'));
