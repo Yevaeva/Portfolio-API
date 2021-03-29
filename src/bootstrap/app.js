@@ -29,6 +29,7 @@ app.use(body_parser.urlencoded({
 }));
 
 app.use(cors());
+pp.options('*', cors());
 
 app.use('/uploads', express.static('uploads'));
 app.use('/static', express.static('public'));
