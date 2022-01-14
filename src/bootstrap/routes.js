@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-module.exports = app => {
-  app.use('/', require('../routes/index.route'));
+module.exports = (app) => {
+  app.use("/", require("../routes/index.route"));
 
-  app.use('/form', require('../routes/form.route'));
+  app.use("/form", require("../routes/form.route"));
 };
